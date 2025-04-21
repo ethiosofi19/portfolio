@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    padding: 1%;
+    background-color: #3e4156;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 3%;
+    border-bottom: solid #5a5d7a 2px;
+    position: sticky;
+    top: 0;
+}
+
+#logo{
+    cursor: pointer;
+    width: 45px;
+    margin: 0 auto 0 5%;
+}
+
+#menu{
+    cursor: pointer;
+    width: 35px;
+    height: 40px;
+    margin: 7px 5% 7px 0;
+}
+#login-btn{
+    font-size: 17px;
+    padding: 0 18px 3px;
+    color: white;
+    background-color: #203650;
+    margin: 7px 15px 7px 0;
+    width: 90px;
+    border-width: 1px;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 19px;
+}
+
+#login-btn:hover{
+    background-color: #3e4156;
+}
+
+#login-btn:active{
+    background-color: #1f334d;
+
+}
+
+#lists-cont{
+    position: fixed;
+    top: 79px;
+    right: 0;
+    left: 0;
+    display: none;
+    background-color: #3e4156;
+    height: 199px;
+    font-size: 19px;
+    padding-top: 5%;
+}
+
+#lists-cont ul li{
+    padding-left: 5px;
+    cursor: pointer;
+    list-style: none;
+    border-bottom: solid #becdcd 1px;
+    width: 100px;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+    padding-bottom: 3px;
+}
+
+#lists-cont ul li a{
+    text-decoration: none;
+    color: #aab7b7;
+}
+
+#lists-cont ul li a:hover{
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+#lists-cont ul li a:active{
+    border-color: #c0c8ca;
+    color: #c0c8ca;
+}
+
+/* Home section */
+
+#home{
+    padding-top: 75px;
+    background-image: url(../img/bg1.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: top;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+}
+
+#home h1{
+    font-size: 79px;
+    margin: 0 0 0 130px;
+}
+
+#home p{
+    font-size: 37px;
+    margin: 29px 0 0 130px;
+}
+
+/* About section */
+
+#about{
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about img{
+    margin: 79px 70px 30px 100px;
+    background-color: #9297bd;
+}
+
+#about div{
+    width: 400px;
+    padding-top: 10px;
+}
+
+#about div h2{
+    color: #9297bd;
+    font-size: 33px;
+}
+
+#about div p{
+    font-size: 18px;
+    margin: 19px 0;
+    line-height: 25px;
+    color: rgb(119, 117, 117);
+}
+
+#about div ul{
+    margin-top: 21px;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:17px;
+}
+
+#about div ul li{
+    list-style: none;
+    color: rgb(119, 117, 117);
+    font-size: 18px;
+}
+
+/* Download resume */
+a{
+    color: white;
+}
+
+#resume{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(242, 245, 248);
+}
+
+#resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#resume div h2{
+    color: #9297bd;
+    font-size: 33px;
+    margin-bottom: 2%;
+}
+
+#resume div p{
+    font-size: 20px;
+    margin: 19px 0;
+    line-height: 25px;
+    color: rgb(119, 117, 117);
+}
+
+#resume button{
+    margin-top: 4%;
+    margin-bottom: 29px;
+    width: 270px;
+    height: 59px;
+    background-color: #3e4156;
+    border: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+#resume button:hover{
+    transition: background-color 0.7s , border 1s;
+    background-color: transparent;
+    border: solid #3e4156 2px;
+    color: #3e4156;
+}
+
+#resume button a{
+    text-decoration: none;
+    color: white;
+}
+
+#resume button:hover a{
+    color: #3e4156;
+}
+
+/* Contact section */
+
+#contact{
+    width: 100%;
+    background-color: #e8f2f2;
+    padding-bottom: 100px;
+}
+
+#contact h1{
+    text-align: center;
+    color: #9297bd;
+    font-size: 35px;
+    padding-top: 70px;
+    margin-bottom: 51px;
+}
+
+.inner-container img{
+    width: 30px;
+    height: 30px;
+}
+
+#contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 70px;
+}
+
+.inner-container{
+    display: flex;
+}
+
+input[name="name"]{
+    text-transform: capitalize;
+}
+
+#inputs input{
+    color: gray;
+    width: 210px;
+    padding: 19px;
+    font-size: 17px;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none ;
+    border-bottom: solid gray 1px;
+}
+
+#message{
+    color: gray;
+    margin-top: 23px;
+    margin-left: 9px;
+    width: 505px;
+    padding: 17px 0 77px 19px;
+    font-size: 17px;
+    background-color: transparent;
+    border: none ;
+    border-bottom: solid gray 1px;
+}
+
+#contact-container button{
+    width: 150px;
+    height: 57px;
+    background-color: #3e4156;
+    border: none;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 15px 0 0 383px;
+}
+
+#contact-container button:hover{
+    background-color: transparent;
+    border: solid #3e4156 2px;
+    color: #3e4156;
+}
+
+#address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 21px;
+}
+
+.inner-container img{
+    width: 30px;
+    margin: 10px 21px 10px 0;
+}
+
+.firstp{
+    font-size: 17px;
+    color: #1f334d;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.secondp{
+    color: gray;
+}
+
+/* Footer section */
+
+
+footer{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3e4156;
+    color: gray;
+    padding: 19px 100px;
+    box-sizing: border-box;
+}
+
+#links{
+    display: flex;
+    gap: 30px;
+}
+
+#links img{
+    width: 35px;
+}
+
+#copyright{
+    padding: 5px;
+}
+
+#links img{
+    padding: 7px 0;
+    width: 17px;
+    height: 17px;
+}
